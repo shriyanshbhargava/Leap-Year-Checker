@@ -20,20 +20,22 @@ body {
   transform: rotateX(180deg);
 }
 
-#btn-translate {
+
+
+#btn-check {
   background-color: rgb(31, 100, 37);
   padding: 1rem 2rem 1rem 2rem;
   color: white;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   border: 0.25rem double whitesmoke;
   border-radius: 5px;
+  margin-top: 2rem;
 }
 
-textarea,
-#output {
-  width: 35rem;
-  height: 15rem;
-  margin: 1rem;
+#year{
+  width: 20rem;
+  height: 5rem;
+  margin-top: 5rem;
   padding: 1rem;
   border-radius: 5px;
   border: none;
@@ -42,17 +44,16 @@ textarea,
   background-color: white;
 }
 
-textarea:focus {
+#year::placeholder {
+  font-weight: bold;
+  font-size: 18px;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+#year:focus {
   outline: none;
 }
 
-.output-txt {
-  margin-top: 2rem;
-  color: black;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 20px;
-  font-weight: bold;
-}
 
 .navbar {
   text-align: center;
@@ -68,32 +69,7 @@ textarea:focus {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.social-div {
-  display: flex;
-  justify-content: center;
-  padding-top: 1rem;
-}
 
-.footer {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  margin-top: 4.5rem;
-  position: relative;
-  bottom: 0;
-  width: 100%;
-}
-
-.social {
-  padding: 5px 18px 20px 18px;
-  width: 30px;
-}
-
-.connect {
-  font-size: 1.5rem;
-  font-weight: bolder;
-  padding: 2rem 2rem 0rem 2rem;
-  display: flex;
-  justify-content: center;
-}
 
 
 @media (max-width: 576px) {
@@ -110,16 +86,8 @@ textarea:focus {
     width: 100%;
   }
 
-  .img {
-    position: fixed;
-    width: 15rem;
-    top: 1.5rem;
-    right: 0.1rem;
-    transform: rotateY(180deg);
-    transform: rotateX(180deg);
-  }
 
-  #btn-translate {
+  #btn-check {
     background-color: rgb(31, 100, 37);
     padding: 1rem 2rem 1rem 2rem;
     color: white;
@@ -128,7 +96,7 @@ textarea:focus {
     border-radius: 5px;
   }
 
-  textarea, #output {
+  #year{
     width: 15rem;
     height: 8rem;
     display: block;
@@ -139,14 +107,6 @@ textarea:focus {
     transition: 0.3s;
     background-color: white;
     border-radius: 5px;
-  }
-
-  .connect {
-    font-size:  1rem;
-    font-weight: bolder;
-    padding: 2rem 2rem 0rem 2rem;
-    display: flex;
-    justify-content: center;
   }
 
 }
